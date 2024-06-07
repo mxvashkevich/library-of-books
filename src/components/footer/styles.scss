@@ -1,0 +1,23 @@
+.footer-container {
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(144deg, #fff -11.64%, darkgray 99.37%);
+  color: darkgray;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 12px;
+  padding-top: 24px;
+
+  .footer-tagline {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-right: 100px;
+  }
+}

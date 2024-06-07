@@ -1,0 +1,27 @@
+.container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :first-child {
+    width: 50%;
+    height: 50%;
+    :first-child {
+      width: 80%;
+      height: 100%;
+
+      span,
+      p {
+        font-weight: 1000;
+      }
+    }
+  }
+}

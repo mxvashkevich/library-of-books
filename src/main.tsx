@@ -1,11 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import { Auth, ContactsPage } from "./components/index.ts";
+import { Auth, ContactsPage } from './components/index.ts'
 
 import App from './App.tsx'
 
@@ -13,17 +10,17 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />
+    path: '/',
+    element: <App />,
   },
   {
-    path: "auth",
-    element: <Auth />
+    path: 'auth',
+    element: <Auth />,
   },
   {
-    path: "contacts",
-    element: <ContactsPage />
-  }
+    path: 'contacts',
+    element: <ContactsPage />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

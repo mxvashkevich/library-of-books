@@ -1,31 +1,43 @@
-import { useNavigate } from "react-router-dom";
-import { chatLink, siteLink } from "./constants";
+import { useNavigate } from 'react-router-dom'
+import { chatLink, siteLink } from './constants'
 
-import "./styles.scss";
+import './styles.scss'
 
 export const Header = () => {
-
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleAuthNavigate = () => {
-    navigate("auth");
+    navigate('auth')
   }
 
   const handleContactsClick = () => {
-    navigate("contacts")
+    navigate('contacts')
+  }
+
+  const обработкаГлавнаяКлик = () => {
+    navigate('/')
   }
 
   return (
     <div className="header-container">
       <div className="logo">
         <img src="/src/assets/logo.png" alt="#" />
-        <h1>{"Цифровая\u00A0бибилиотека им.\u00A0Софии\u00A0Великой"}</h1>
+        <h1>{'Цифровая\u00A0бибилиотека им.\u00A0Софии\u00A0Великой'}</h1>
       </div>
       <div className="header-content">
         <div className="nav">
+          <button onClick={обработкаГлавнаяКлик}>ГЛАВНАЯ</button>
           <button onClick={handleContactsClick}>КОНТАКТЫ</button>
-          <button><a href={siteLink} target="_blank">САЙТ ВУЗА</a></button>
-          <button><a href={chatLink} target="_blank">ЧАТ</a></button>
+          <button>
+            <a href={siteLink} target="_blank">
+              САЙТ ВУЗА
+            </a>
+          </button>
+          <button>
+            <a href={chatLink} target="_blank">
+              ЧАТ
+            </a>
+          </button>
         </div>
         <div className="auth">
           <button onClick={handleAuthNavigate}>Войти</button>
@@ -33,5 +45,5 @@ export const Header = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,0 +1,16 @@
+{
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "css": {
+    "indent": {
+      "style": "tab"
+    }
+  },
+  "scss": {
+    "indent": {
+      "style": "tab"
+    }
+  }
+}
