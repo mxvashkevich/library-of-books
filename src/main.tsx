@@ -4,9 +4,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 import App from './App.tsx'
+import { Auth } from "./components/index.ts";
+
 import './index.css'
-import { Auth } from "./components/auth/index.tsx";
 
 const router = createBrowserRouter([
   {

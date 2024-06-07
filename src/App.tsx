@@ -1,9 +1,15 @@
+import { Footer, Header, Main } from "./components"
+
 import './App.css'
 
 function App() {
 
   return (
-    <div></div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   )
 }
 
