@@ -3,7 +3,7 @@ import { BOOK_STORE } from "./constants"
 import "./styles.scss";
 
 export const Main = () => {
-  return <div className="container">
+  return <div className="main-container">
     {BOOK_STORE.map((book) => (
       <div className="book-item">
         <div className="book-img">

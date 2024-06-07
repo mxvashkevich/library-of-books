@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { url } from "./constants";
 
 import  "./styles.scss"
-import { url } from "./constants";
 
 type FormValues = {
   login: string;

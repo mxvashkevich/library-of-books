@@ -5,8 +5,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import { Auth, ContactsPage } from "./components/index.ts";
+
 import App from './App.tsx'
-import { Auth } from "./components/index.ts";
 
 import './index.css'
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "auth",
     element: <Auth />
+  },
+  {
+    path: "contacts",
+    element: <ContactsPage />
   }
 ])
 
