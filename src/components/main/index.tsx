@@ -77,7 +77,7 @@ export const Main = () => {
       formData.append('file', image)
       formData.append('file', file)
 
-      fetch(baseUrl + `book/create`, {
+      fetch(baseUrl + `/book/create`, {
         // запрос для создания объекта книга в БД
         method: 'POST',
         body: formData,
@@ -120,7 +120,7 @@ export const Main = () => {
       setUser(storageUser)
     }
 
-    fetch(baseUrl + 'book/all', {
+    fetch(baseUrl + '/book/all', {
       method: 'GET',
     })
       .then((res) => (res.ok ? res.json() : null))

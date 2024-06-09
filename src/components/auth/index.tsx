@@ -108,7 +108,7 @@ export const Auth = () => {
   }
 
   useEffect(() => {
-    fetch(baseUrl + `auth/${typeAction}`, {
+    fetch(baseUrl + `/auth/${typeAction}`, {
       // запрос для регистрации или авторизации
       method: 'POST',
       headers: {
