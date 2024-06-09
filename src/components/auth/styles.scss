@@ -36,6 +36,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 28px;
     gap: 18px;
     width: 334px;
     height: 434px;
@@ -45,8 +47,13 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      font-size: 18px;
+      text-align: center;
+      gap: 15px;
 
       :first-child {
+        width: 170px;
+        height: 40px;
         background: linear-gradient(
           144deg,
           #fff -11.64%,
@@ -56,6 +63,8 @@
       }
 
       :last-child {
+        width: 170px;
+        height: 40px;
         background: linear-gradient(
           144deg,
           #e5d5ff -11.64%,
@@ -134,5 +143,26 @@
         color: black;
       }
     }
+  }
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-children {
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 38px;
+  background-color: gray;
+  margin: 0 auto;
+
+  h1 {
+    margin: 30% auto;
+    font-size: 32px;
+    text-align: center;
   }
 }

@@ -1,4 +1,4 @@
-.container {
+.modal-container {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -10,18 +10,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  :first-child {
-    width: 50%;
-    height: 50%;
-    :first-child {
-      width: 80%;
-      height: 100%;
-
-      span,
-      p {
-        font-weight: 1000;
-      }
-    }
-  }
 }

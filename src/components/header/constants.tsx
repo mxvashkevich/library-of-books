@@ -1,3 +1,3 @@
-export const siteLink = 'https://sfedu.ru/'
+export const siteLink = 'https://tpi.donstu.ru/'
 
-export const chatLink = 'https://t.me/Sofyshka_Maks'
+export const chatLink = 'https://clck.ru/3BAkoK'

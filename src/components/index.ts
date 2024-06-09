@@ -1,5 +1,6 @@
 export { Auth } from './auth'
+export { ContactsPage } from './contacts-page'
 export { Header } from './header'
 export { Main } from './main'
+export { Modal } from './modal'
 export { Footer } from './footer'
-export { ContactsPage } from './contacts-page'

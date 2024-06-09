@@ -1,6 +1,6 @@
 import cn from 'classnames'
 
-import styles from './styles.scss'
+import './styles.scss'
 
 type ModalProps = {
   opened: boolean
@@ -11,7 +11,14 @@ type ModalProps = {
 
 export const Modal = ({ opened, children, onClick, className }: ModalProps) =>
   opened && (
-    <div onClick={onClick} className={cn(styles.container, className)}>
-      <div>{children}</div>
+    <div
+      onClick={(event) => {
+        if (event.target === event.currentTarget) {
+          onClick?.()
+        }
+      }}
+      className={cn('modal-container', className)}
+    >
+      <>{children}</>
     </div>
   )

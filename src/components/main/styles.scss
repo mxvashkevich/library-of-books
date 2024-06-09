@@ -1,23 +1,106 @@
+.all-wrap {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+}
+
 .main-container {
   padding: 32px;
 
+  height: 100%;
+
   background: linear-gradient(244deg, #fff -49.1%, #5d6dff 67.19%);
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+.add-book-form {
+  width: 30%;
+  height: 50%;
+  padding: 32px;
+  background-color: chocolate;
+  border-radius: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    height: 30px;
+    border-radius: 12px;
+    background-color: bisque;
+    color: black;
+  }
+
+  .image-download {
+    width: 36px !important;
+    height: 36px !important;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.book-opened {
+  // background: rgba(0, 0, 0, 0.5);
+  background: #539a40;
+  border: 2px solid black;
+  border-radius: 32px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  gap: 40px;
 
-  overflow-x: scroll;
+  .book-info {
+    background-color: cadetblue;
+    border-bottom: 4px solid black;
+    border-radius: 32px;
+  }
 
-  width: 100%;
+  img {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+}
+
+.toolbar {
   height: 100%;
+  width: 15%;
+  padding: 20px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-self: start;
 }
 
 .book-item {
   position: relative;
+  margin-right: 54px;
+  margin-bottom: 20px;
   z-index: 1;
   background: linear-gradient(144deg, lightgray -11.64%, darkgreen 99.37%);
 
@@ -53,8 +136,9 @@
       margin: 0;
     }
     height: 50%;
+    overflow-y: scroll;
 
-    border-radius: 150px;
+    border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
 
@@ -72,4 +156,15 @@
     text-decoration-thickness: 0.1em;
     text-decoration-color: #333;
   }
+}
+
+.download-img {
+}
+
+.empty-books {
+  font-size: 32px;
+  background-color: #35831f;
+  padding: 32px;
+  border-radius: 32px;
+  border: 2px solid black;
 }
