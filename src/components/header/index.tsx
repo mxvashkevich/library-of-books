@@ -22,11 +22,11 @@ export const Header = () => {
   })
 
   const handleAuthNavigate = () => {
-    navigate('auth')
+    navigate('auth', { replace: true })
   }
 
   const handleContactsClick = () => {
-    navigate('contacts')
+    navigate('contacts', { replace: true })
   }
 
   const handleMainNavigate = () => {

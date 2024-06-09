@@ -23,7 +23,7 @@ const BookCard = ({
   <div className="book-item" onClick={onClick}>
     <div className="book-img">
       <img
-        src={`http://localhost:3001/books/${image}`}
+        src={`${baseUrl}/books/${image}`}
         alt={`book-image-named: ${name}`}
         className="book-img"
       />
@@ -127,7 +127,6 @@ export const Main = () => {
       .then((data) => {
         if (!data) return
         setBooks(data.books)
-        // setIsFetch(false)
       })
   }, [isFetchBooks])
 
@@ -176,7 +175,7 @@ export const Main = () => {
               <p>Художественная литература</p>
             </div>
             <a
-              href={`http://localhost:3001/books/${books[activeIndex].book_link}`}
+              href={`${baseUrl}/books/${books[activeIndex].book_link}`}
               target="_blank"
             >
               <img
