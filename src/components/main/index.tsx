@@ -77,8 +77,6 @@ export const Main = () => {
       formData.append('file', image)
       formData.append('file', file)
 
-      console.log(formData.get('file'))
-
       fetch(baseUrl + `book/create`, {
         // запрос для создания объекта книга в БД
         method: 'POST',
