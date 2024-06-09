@@ -6,11 +6,12 @@ import {
   useState,
 } from 'react'
 
+import { Modal } from '../modal/index.tsx'
+import { baseUrl } from '../constants.ts'
+
 import type { Book, BookProps, User } from './constants.ts'
 
 import './styles.scss'
-import { Modal } from '../modal/index.tsx'
-import { baseUrl } from '../constants.ts'
 
 const BookCard = ({
   name,
@@ -134,7 +135,7 @@ export const Main = () => {
 
   return (
     <div className="all-wrap">
-      {( // TODO teacher
+      {(
           <div className="toolbar">
             <button onClick={handleAddBook}>Добавить книгу</button>
           </div>
